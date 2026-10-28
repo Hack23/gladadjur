@@ -13,6 +13,13 @@
   <meta property="og:description" content="Barnkläder, presentartiklar, konst och lek. Öppet hus måndag 2 november 2026 kl. 16.00–20.00.">
   <meta property="og:url" content="https://gladadjur.se/">
   <meta property="og:image" content="https://gladadjur.se/welcome-oppet-hus.jpg">
+  <meta property="og:image:alt" content="Inbjudan till öppet hus hos Glada djur i Ulricehamn">
+  <meta property="og:site_name" content="Glada djur">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/logo-192.png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
   <link rel="stylesheet" href="styles.css">
   <script type="application/ld+json">
   {
@@ -21,7 +28,12 @@
     "@id": "https://gladadjur.se/#store",
     "name": "Glada djur",
     "url": "https://gladadjur.se/",
-    "image": "https://gladadjur.se/welcome-oppet-hus.jpg",
+    "image": [
+      "https://gladadjur.se/welcome-oppet-hus.jpg",
+      "https://gladadjur.se/img/personliga-tavlor.webp"
+    ],
+    "logo": "https://gladadjur.se/img/logo-512.png",
+    "sameAs": ["https://www.instagram.com/gladadjurstudio"],
     "telephone": "+46701479201",
     "email": "marianne@sorling.nu",
     "description": "Butik med barnkläder, presentartiklar, konst och lek.",
@@ -77,9 +89,13 @@
   <a class="skip" href="#innehall">Hoppa till innehåll</a>
 
   <header class="site-header">
-    <a class="brand" href="/">Glada djur</a>
+    <a class="brand" href="/">
+      <img src="img/logo-96.webp" width="48" height="48" alt="">
+      <span>Glada djur</span>
+    </a>
     <nav aria-label="Huvudmeny">
       <a href="#varumarken">Varumärken</a>
+      <a href="#studio">Tavlor</a>
       <a href="#oppet-hus">Öppet hus</a>
       <a href="#kontakt">Kontakt</a>
     </nav>
@@ -98,19 +114,27 @@
       <p class="section-intro">Barnkläder&nbsp;&bull; Presentartiklar&nbsp;&bull; Konst&nbsp;&bull; Lek</p>
       <div class="cards">
         <article class="card card-lekloop">
-          <h3>Lekloop</h3>
+          <h3><img class="card-logo" src="img/lekloop-logo.webp" width="605" height="138" loading="lazy" alt="Lekloop"></h3>
           <p class="tag">Barnkläder</p>
           <p>Färgglada och hållbara kläder för barn.</p>
+          <img class="card-img" src="img/lekloop-hangtag-front.webp" width="533" height="795" loading="lazy"
+               alt="Lekloops hangtag med två lekande barn i färgglada kläder">
+          <a class="pdf-link" href="26-0852_Lekloop_hangtag.pdf" type="application/pdf">Hangtag (PDF)</a>
         </article>
         <article class="card card-cirka">
           <h3>Cirka</h3>
           <p class="tag">Presentartiklar</p>
-          <p>Fina presenter för både stora och små.</p>
+          <p>Handgjorda produkter skapade av återbrukade textilier.</p>
+          <img class="card-img" src="img/cirka-hangtag-front.webp" width="395" height="643" loading="lazy"
+               alt="Cirkas hangtag: återbruk, kreativitet, kvalitet">
+          <a class="pdf-link" href="26-2927_GUN_cirka_hangtag.pdf" type="application/pdf">Hangtag (PDF)</a>
         </article>
         <article class="card card-studio">
           <h3>Glada djur Studio</h3>
           <p class="tag">Konst</p>
           <p>Konst fylld av färg, glädje och personlighet.</p>
+          <img class="card-img card-img-round" src="img/logo-512.webp" width="512" height="512" loading="lazy"
+               alt="Logotyp för Glada djur Studio: färgglad penselring med hjärtan">
         </article>
         <article class="card card-blabert">
           <h3>Blåbert</h3>
@@ -118,6 +142,26 @@
           <p>Lek och leksaker som skapar roliga stunder.</p>
         </article>
       </div>
+    </section>
+
+    <section id="studio" class="section">
+      <h2>Personliga tavlor</h2>
+      <p class="section-intro">Varje tavla är unik och målad för hand med barnets namn.</p>
+      <figure class="wide">
+        <img src="img/personliga-tavlor.webp" width="900" height="822" loading="lazy"
+             alt="Glada djur Studio: personliga barntavlor med Ella, Oskar, Nilas och Leo som tigrar, drakar, kycklingar och hundar">
+      </figure>
+      <p><a href="https://www.instagram.com/gladadjurstudio" rel="me noopener">@gladadjurstudio på Instagram</a></p>
+    </section>
+
+    <section id="aterbruk" class="section">
+      <h2>Återbruk med Cirka</h2>
+      <p class="section-intro">Återbruk &bull; Kreativitet &bull; Kvalitet</p>
+      <figure class="wide narrow">
+        <img src="img/cirka-aterbruk.webp" width="700" height="1025" loading="lazy"
+             alt="Cirkas hangtag: återbruk, kreativitet, kvalitet">
+      </figure>
+      <p>Varje produkt är unik och tillverkad av omsorgsfullt utvalda återbrukade textilier.</p>
     </section>
 
     <section id="oppet-hus" class="section">

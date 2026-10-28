@@ -75,6 +75,9 @@ img {
 }
 
 .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
   font-weight: 700;
   font-size: 1.4rem;
   color: var(--coral);
@@ -195,6 +198,53 @@ h2 {
   font-size: 0.75rem;
 }
 
+.card-logo {
+  display: block;
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.card-img {
+  display: block;
+  width: 100%;
+  max-width: 12rem;
+  height: auto;
+  margin: 1rem auto 0.5rem;
+  border-radius: 12px;
+}
+
+.card-img-round {
+  max-width: 10rem;
+  border-radius: 50%;
+}
+
+.pdf-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--coral);
+}
+
+.pdf-link::before {
+  content: "\2193  ";
+}
+
+.wide {
+  margin: 0 auto 1.25rem;
+  max-width: 40rem;
+}
+
+.wide.narrow {
+  max-width: 24rem;
+}
+
+.wide img {
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(27, 58, 87, 0.15);
+}
+
 .card-lekloop h3 { color: var(--coral); }
 .card-cirka h3 { color: var(--navy); letter-spacing: 0.08em; }
 .card-studio h3 { color: #e08a2c; font-style: italic; }
@@ -291,6 +341,11 @@ address {
 
 @media (max-width: 30rem) {
   .site-header {
+    justify-content: center;
+  }
+
+  .site-header nav {
+    flex-wrap: wrap;
     justify-content: center;
   }
 }
