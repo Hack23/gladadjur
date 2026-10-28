@@ -18,14 +18,57 @@
   {
     "@context": "https://schema.org",
     "@type": "Store",
+    "@id": "https://gladadjur.se/#store",
     "name": "Glada djur",
     "url": "https://gladadjur.se/",
+    "image": "https://gladadjur.se/welcome-oppet-hus.jpg",
     "telephone": "+46701479201",
+    "email": "marianne@sorling.nu",
     "description": "Butik med barnkläder, presentartiklar, konst och lek.",
+    "inLanguage": "sv-SE",
+    "founder": {
+      "@type": "Person",
+      "name": "Marianne Sörling",
+      "email": "marianne@sorling.nu"
+    },
     "address": {
       "@type": "PostalAddress",
+      "streetAddress": "Storgatan 15",
+      "postalCode": "523 30",
       "addressLocality": "Ulricehamn",
       "addressCountry": "SE"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "telephone": "+46701479201",
+      "email": "marianne@sorling.nu",
+      "availableLanguage": "sv"
+    },
+    "makesOffer": [
+      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Barnkläder", "brand": { "@type": "Brand", "name": "Lekloop" } } },
+      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Presentartiklar", "brand": { "@type": "Brand", "name": "Cirka" } } },
+      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Konst", "brand": { "@type": "Brand", "name": "Glada djur Studio" } } },
+      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Lek och leksaker", "brand": { "@type": "Brand", "name": "Blåbert" } } }
+    ],
+    "event": {
+      "@type": "Event",
+      "name": "Öppet hus – Glada djur",
+      "startDate": "2026-11-02T16:00:00+01:00",
+      "endDate": "2026-11-02T20:00:00+01:00",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Glada djur",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Storgatan 15",
+          "postalCode": "523 30",
+          "addressLocality": "Ulricehamn",
+          "addressCountry": "SE"
+        }
+      }
     }
   }
   </script>
@@ -97,10 +140,19 @@
       <p class="phone"><a href="sms:+46701479201">070 147 92 01</a></p>
       <p class="accent strong">Varmt välkommen!</p>
       <p class="strong">Marianne Sörling</p>
+      <address>
+        Storgatan 15<br>
+        523 30 Ulricehamn
+      </address>
     </section>
   </main>
 
   <footer class="site-footer">
+    <address>
+      Storgatan 15, 523 30 Ulricehamn<br>
+      <a href="mailto:marianne@sorling.nu">marianne@sorling.nu</a> &bull;
+      <a href="tel:+46701479201">070 147 92 01</a>
+    </address>
     <p>&copy; 2026 Glada djur &ndash; Ulricehamn</p>
   </footer>
 </body>

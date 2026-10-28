@@ -264,10 +264,19 @@ h2 {
   color: var(--coral);
 }
 
+address {
+  font-style: normal;
+  line-height: 1.6;
+}
+
 /* Footer */
 .site-footer {
   padding: 1.5rem 1rem 2rem;
   font-size: 0.85rem;
+}
+
+.site-footer address {
+  margin-bottom: 0.75rem;
 }
 
 :focus-visible {
