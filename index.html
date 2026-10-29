@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Glada djur – Butik i Ulricehamn | Barnkläder, presentartiklar, konst &amp; lek</title>
+  <title>Glada djur – Butik i Ulricehamn | Barnkläder, konst &amp; lek</title>
   <meta name="description" content="Glada djur är en ny butik i Ulricehamn med fyra varumärken: Lekloop (barnkläder), Cirka (presentartiklar), Glada djur Studio (konst) och Blåbert (lek). Välkommen på öppet hus 2 november 2026.">
   <link rel="canonical" href="https://gladadjur.se/">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -15,6 +15,7 @@
   <meta property="og:url" content="https://gladadjur.se/">
   <meta property="og:image" content="https://gladadjur.se/welcome-oppet-hus.jpg">
   <meta property="og:image:width" content="1131">
+  <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:height" content="1600">
   <meta property="og:image:alt" content="Inbjudan till öppet hus hos Glada djur i Ulricehamn">
   <meta property="og:site_name" content="Glada djur">
@@ -22,6 +23,7 @@
   <meta name="twitter:title" content="Glada djur – Ny butik i Ulricehamn">
   <meta name="twitter:description" content="Barnkläder, presentartiklar, konst och lek. Öppet hus måndag 2 november 2026 kl. 16.00–20.00.">
   <meta name="twitter:image" content="https://gladadjur.se/welcome-oppet-hus.jpg">
+  <meta name="twitter:image:alt" content="Inbjudan till öppet hus hos Glada djur i Ulricehamn">
   <link rel="icon" href="favicon.ico" sizes="48x48">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
   <link rel="icon" type="image/png" sizes="192x192" href="img/logo-192.png">
@@ -30,72 +32,99 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Store",
-    "@id": "https://gladadjur.se/#store",
-    "name": "Glada djur",
-    "url": "https://gladadjur.se/",
-    "image": [
-      "https://gladadjur.se/welcome-oppet-hus.jpg",
-      "https://gladadjur.se/img/butiksfonster.webp",
-      "https://gladadjur.se/img/personliga-tavlor.webp",
-      "https://gladadjur.se/img/blabert-fodelsebevis.webp"
-    ],
-    "logo": "https://gladadjur.se/img/logo-512.png",
-    "sameAs": ["https://www.instagram.com/gladadjurstudio"],
-    "telephone": "+46701479201",
-    "email": "marianne@sorling.nu",
-    "description": "Butik med barnkläder, presentartiklar, konst och lek.",
-    "inLanguage": "sv-SE",
-    "founder": {
-      "@type": "Person",
-      "name": "Marianne Sörling",
-      "email": "marianne@sorling.nu"
-    },
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Storgatan 15",
-      "postalCode": "523 30",
-      "addressLocality": "Ulricehamn",
-      "addressCountry": "SE"
-    },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "customer service",
-      "telephone": "+46701479201",
-      "email": "marianne@sorling.nu",
-      "availableLanguage": "sv"
-    },
-    "makesOffer": [
-      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Barnkläder", "brand": { "@type": "Brand", "name": "Lekloop" } } },
-      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Presentartiklar", "brand": { "@type": "Brand", "name": "Cirka" } } },
-      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Konst", "brand": { "@type": "Brand", "name": "Glada djur Studio" } } },
-      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Lek och leksaker", "brand": { "@type": "Brand", "name": "Blåbert" } } },
-      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Blåbert – handsydd dinosaurie", "image": "https://gladadjur.se/img/blabert-fodelsebevis.webp", "description": "Mjuk, handsydd dinosaurie med födelsebevis, tillverkad av Lekloop i Ulricehamn.", "brand": { "@type": "Brand", "name": "Blåbert" } } },
-      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Rosa Blåbert – handsydd dinosaurie", "image": "https://gladadjur.se/img/rosa-blabert-fodelsebevis.webp", "description": "Mjuk, handsydd dinosaurie med födelsebevis, tillverkad av Lekloop i Ulricehamn.", "brand": { "@type": "Brand", "name": "Blåbert" } } }
-    ],
-    "event": {
-      "@type": "Event",
-      "name": "Öppet hus – Glada djur",
-      "description": "Fira butiksöppningen med Glada djur i Ulricehamn och upptäck butikens fyra varumärken.",
-      "image": "https://gladadjur.se/welcome-oppet-hus.jpg",
-      "isAccessibleForFree": true,
-      "organizer": { "@id": "https://gladadjur.se/#store" },
-      "startDate": "2026-11-02T16:00:00+01:00",
-      "endDate": "2026-11-02T20:00:00+01:00",
-      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-      "eventStatus": "https://schema.org/EventScheduled",
-      "location": {
-        "@type": "Place",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://gladadjur.se/#website",
+        "url": "https://gladadjur.se/",
         "name": "Glada djur",
+        "inLanguage": "sv-SE",
+        "publisher": { "@id": "https://gladadjur.se/#store" }
+      },
+      {
+        "@type": "Store",
+        "@id": "https://gladadjur.se/#store",
+        "name": "Glada djur",
+        "url": "https://gladadjur.se/",
+        "image": [
+          "https://gladadjur.se/img/butiksfonster.webp",
+          "https://gladadjur.se/img/personliga-tavlor.webp",
+          "https://gladadjur.se/img/blabert-fodelsebevis.webp",
+          "https://gladadjur.se/welcome-oppet-hus.jpg"
+        ],
+        "logo": "https://gladadjur.se/img/logo-512.png",
+        "sameAs": ["https://www.instagram.com/gladadjurstudio"],
+        "telephone": "+46701479201",
+        "email": "marianne@sorling.nu",
+        "description": "Butik på Storgatan 15 i Ulricehamn med barnkläder, presentartiklar, konst och lek.",
+        "slogan": "Barnkläder, presentartiklar, konst och lek under samma tak",
+        "founder": {
+          "@type": "Person",
+          "name": "Marianne Sörling",
+          "email": "marianne@sorling.nu"
+        },
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Storgatan 15",
           "postalCode": "523 30",
           "addressLocality": "Ulricehamn",
           "addressCountry": "SE"
+        },
+        "hasMap": "https://www.google.com/maps/search/?api=1&query=Storgatan+15+523+30+Ulricehamn",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer service",
+          "telephone": "+46701479201",
+          "email": "marianne@sorling.nu",
+          "availableLanguage": "sv"
+        },
+        "brand": [
+          { "@type": "Brand", "name": "Lekloop", "slogan": "Barnkläder" },
+          { "@type": "Brand", "name": "Cirka", "slogan": "Presentartiklar" },
+          { "@type": "Brand", "name": "Glada djur Studio", "slogan": "Konst" },
+          { "@type": "Brand", "name": "Blåbert", "slogan": "Lek" }
+        ],
+        "event": { "@id": "https://gladadjur.se/#oppet-hus" }
+      },
+      {
+        "@type": "Event",
+        "@id": "https://gladadjur.se/#oppet-hus",
+        "name": "Öppet hus – Glada djur",
+        "description": "Fira butiksöppningen med Glada djur i Ulricehamn och upptäck butikens fyra varumärken.",
+        "url": "https://gladadjur.se/#oppet-hus",
+        "image": "https://gladadjur.se/welcome-oppet-hus.jpg",
+        "inLanguage": "sv-SE",
+        "startDate": "2026-11-02T16:00:00+01:00",
+        "endDate": "2026-11-02T20:00:00+01:00",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "isAccessibleForFree": true,
+        "offers": {
+          "@type": "Offer",
+          "url": "https://gladadjur.se/#oppet-hus",
+          "price": "0",
+          "priceCurrency": "SEK",
+          "availability": "https://schema.org/InStock",
+          "validFrom": "2026-10-29T00:00:00+01:00"
+        },
+        "organizer": {
+          "@type": "Organization",
+          "name": "Glada djur",
+          "url": "https://gladadjur.se/"
+        },
+        "location": {
+          "@type": "Place",
+          "name": "Glada djur",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Storgatan 15",
+            "postalCode": "523 30",
+            "addressLocality": "Ulricehamn",
+            "addressCountry": "SE"
+          }
         }
       }
-    }
+    ]
   }
   </script>
 </head>
@@ -122,7 +151,8 @@
       <p class="eyebrow">Ny butik i Ulricehamn</p>
       <h1>Välkommen till <span class="accent">Glada djur</span>!</h1>
       <p class="lead">Barnkläder, presentartiklar, konst och lek – fyra varumärken under samma tak.</p>
-      <a class="button" href="#oppet-hus">Se öppet hus</a>
+      <a class="button" href="#oppet-hus">Kom på öppet hus 2 november</a>
+      <p class="hero-address">Storgatan 15, Ulricehamn &bull; <a href="https://www.google.com/maps/search/?api=1&amp;query=Storgatan+15+523+30+Ulricehamn" rel="noopener">Hitta hit</a></p>
     </section>
 
     <section id="varumarken" class="section">
@@ -237,6 +267,7 @@
         Storgatan 15<br>
         523 30 Ulricehamn
       </address>
+      <p><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Storgatan+15+523+30+Ulricehamn" rel="noopener">Hitta till butiken</a></p>
     </section>
   </main>
 
