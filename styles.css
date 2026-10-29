@@ -1,7 +1,8 @@
 :root {
   --cream: #fff9f2;
   --navy: #1b3a57;
-  --coral: #e8606d;
+  --coral: #c93f4d;
+  --coral-dark: #a8323f;
   --pink-border: #e8a8a8;
   --sky: #e6f3f8;
   --blue: #2b7fd1;
@@ -92,6 +93,7 @@ img {
 .site-header nav a {
   text-decoration: none;
   font-size: 0.95rem;
+  padding: 0.5rem 0.1rem;
 }
 
 .site-header nav a:hover,
@@ -120,11 +122,13 @@ h3 {
 h1 {
   font-size: clamp(2.2rem, 6vw, 3.6rem);
   text-transform: uppercase;
+  text-wrap: balance;
 }
 
 h2 {
   font-size: clamp(1.6rem, 4vw, 2.2rem);
   text-transform: uppercase;
+  text-wrap: balance;
 }
 
 /* Hero */
@@ -161,7 +165,7 @@ h2 {
 
 .button:hover,
 .button:focus-visible {
-  background: #d24c5a;
+  background: var(--coral-dark);
   transform: translateY(-2px);
 }
 
@@ -221,7 +225,7 @@ h2 {
 
 .pdf-link {
   display: inline-block;
-  margin-top: 0.5rem;
+  margin: 0.5rem 0.4rem 0;
   font-size: 0.9rem;
   font-weight: 700;
   color: var(--coral);
@@ -231,9 +235,39 @@ h2 {
   content: "\2193  ";
 }
 
+.more-link::before {
+  content: "\2192  ";
+}
+
 .wide {
   margin: 0 auto 1.25rem;
   max-width: 40rem;
+}
+
+.wide.wider {
+  max-width: 48rem;
+}
+
+figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  align-items: center;
+  gap: 1.5rem;
+  margin: 0 auto 1.5rem;
+}
+
+.gallery figure {
+  margin: 0;
+}
+
+.gallery img {
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(27, 58, 87, 0.15);
 }
 
 .wide.narrow {
@@ -247,7 +281,7 @@ h2 {
 
 .card-lekloop h3 { color: var(--coral); }
 .card-cirka h3 { color: var(--navy); letter-spacing: 0.08em; }
-.card-studio h3 { color: #e08a2c; font-style: italic; }
+.card-studio h3 { color: #b3681a; font-style: italic; }
 .card-blabert h3 { color: var(--blue); }
 
 /* Open house */

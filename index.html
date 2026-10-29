@@ -6,6 +6,7 @@
   <title>Glada djur – Butik i Ulricehamn | Barnkläder, presentartiklar, konst &amp; lek</title>
   <meta name="description" content="Glada djur är en ny butik i Ulricehamn med fyra varumärken: Lekloop (barnkläder), Cirka (presentartiklar), Glada djur Studio (konst) och Blåbert (lek). Välkommen på öppet hus 2 november 2026.">
   <link rel="canonical" href="https://gladadjur.se/">
+  <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="theme-color" content="#fff9f2">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="sv_SE">
@@ -13,9 +14,14 @@
   <meta property="og:description" content="Barnkläder, presentartiklar, konst och lek. Öppet hus måndag 2 november 2026 kl. 16.00–20.00.">
   <meta property="og:url" content="https://gladadjur.se/">
   <meta property="og:image" content="https://gladadjur.se/welcome-oppet-hus.jpg">
+  <meta property="og:image:width" content="1131">
+  <meta property="og:image:height" content="1600">
   <meta property="og:image:alt" content="Inbjudan till öppet hus hos Glada djur i Ulricehamn">
   <meta property="og:site_name" content="Glada djur">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Glada djur – Ny butik i Ulricehamn">
+  <meta name="twitter:description" content="Barnkläder, presentartiklar, konst och lek. Öppet hus måndag 2 november 2026 kl. 16.00–20.00.">
+  <meta name="twitter:image" content="https://gladadjur.se/welcome-oppet-hus.jpg">
   <link rel="icon" href="favicon.ico" sizes="48x48">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
   <link rel="icon" type="image/png" sizes="192x192" href="img/logo-192.png">
@@ -30,7 +36,9 @@
     "url": "https://gladadjur.se/",
     "image": [
       "https://gladadjur.se/welcome-oppet-hus.jpg",
-      "https://gladadjur.se/img/personliga-tavlor.webp"
+      "https://gladadjur.se/img/butiksfonster.webp",
+      "https://gladadjur.se/img/personliga-tavlor.webp",
+      "https://gladadjur.se/img/blabert-fodelsebevis.webp"
     ],
     "logo": "https://gladadjur.se/img/logo-512.png",
     "sameAs": ["https://www.instagram.com/gladadjurstudio"],
@@ -61,11 +69,17 @@
       { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Barnkläder", "brand": { "@type": "Brand", "name": "Lekloop" } } },
       { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Presentartiklar", "brand": { "@type": "Brand", "name": "Cirka" } } },
       { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Konst", "brand": { "@type": "Brand", "name": "Glada djur Studio" } } },
-      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Lek och leksaker", "brand": { "@type": "Brand", "name": "Blåbert" } } }
+      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Lek och leksaker", "brand": { "@type": "Brand", "name": "Blåbert" } } },
+      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Blåbert – handsydd dinosaurie", "image": "https://gladadjur.se/img/blabert-fodelsebevis.webp", "description": "Mjuk, handsydd dinosaurie med födelsebevis, tillverkad av Lekloop i Ulricehamn.", "brand": { "@type": "Brand", "name": "Blåbert" } } },
+      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Rosa Blåbert – handsydd dinosaurie", "image": "https://gladadjur.se/img/rosa-blabert-fodelsebevis.webp", "description": "Mjuk, handsydd dinosaurie med födelsebevis, tillverkad av Lekloop i Ulricehamn.", "brand": { "@type": "Brand", "name": "Blåbert" } } }
     ],
     "event": {
       "@type": "Event",
       "name": "Öppet hus – Glada djur",
+      "description": "Fira butiksöppningen med Glada djur i Ulricehamn och upptäck butikens fyra varumärken.",
+      "image": "https://gladadjur.se/welcome-oppet-hus.jpg",
+      "isAccessibleForFree": true,
+      "organizer": { "@id": "https://gladadjur.se/#store" },
       "startDate": "2026-11-02T16:00:00+01:00",
       "endDate": "2026-11-02T20:00:00+01:00",
       "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
@@ -95,7 +109,9 @@
     </a>
     <nav aria-label="Huvudmeny">
       <a href="#varumarken">Varumärken</a>
+      <a href="#blabert">Blåbert</a>
       <a href="#studio">Tavlor</a>
+      <a href="#butiken">Butiken</a>
       <a href="#oppet-hus">Öppet hus</a>
       <a href="#kontakt">Kontakt</a>
     </nav>
@@ -120,6 +136,7 @@
           <img class="card-img" src="img/lekloop-hangtag-front.webp" width="533" height="795" loading="lazy"
                alt="Lekloops hangtag med två lekande barn i färgglada kläder">
           <a class="pdf-link" href="26-0852_Lekloop_hangtag.pdf" type="application/pdf">Hangtag (PDF)</a>
+          <a class="pdf-link" href="26-0853_Lekloop_visit.pdf" type="application/pdf">Visitkort (PDF)</a>
         </article>
         <article class="card card-cirka">
           <h3>Cirka</h3>
@@ -140,8 +157,30 @@
           <h3>Blåbert</h3>
           <p class="tag">Lek</p>
           <p>Lek och leksaker som skapar roliga stunder.</p>
+          <img class="card-img" src="img/blabert-hangtag-front.webp" width="460" height="905" loading="lazy"
+               alt="Blåberts födelsebevis: en mörkblå, handsydd dinosaurie">
+          <a class="pdf-link more-link" href="#blabert">Möt Blåbert</a>
         </article>
       </div>
+    </section>
+
+    <section id="blabert" class="section" aria-labelledby="blabert-rubrik">
+      <h2 id="blabert-rubrik">Möt <span class="accent">Blåbert</span></h2>
+      <p class="section-intro">Handsydda dinosaurier med eget födelsebevis</p>
+      <p class="lead">En mjuk och modig dinosaurie som älskar att få nya vänner. Varje Blåbert är sydd för hand av utvalda tyger och är redo att få en alldeles egen liten vän.</p>
+      <div class="gallery">
+        <figure>
+          <img src="img/blabert-fodelsebevis.webp" width="900" height="972" loading="lazy"
+               alt="Födelsebevis för Blåbert, en mörkblå dinosaurie. Född 2026 i Ulricehamn, dinosaurie-ID BB-001, tillverkad för hand av Lekloop">
+          <figcaption><strong>Blåbert</strong> &ndash; ID BB-001</figcaption>
+        </figure>
+        <figure>
+          <img src="img/rosa-blabert-fodelsebevis.webp" width="900" height="735" loading="lazy"
+               alt="Födelsebevis för Rosa Blåbert, en rosa dinosaurie med blomma. Född 2026 i Ulricehamn, dinosaurie-ID RB-001, tillverkad för hand av Lekloop">
+          <figcaption><strong>Rosa Blåbert</strong> &ndash; ID RB-001</figcaption>
+        </figure>
+      </div>
+      <p>Alla dinosaurier är unika &ndash; precis som sina nya kompisar.</p>
     </section>
 
     <section id="studio" class="section">
@@ -162,6 +201,16 @@
              alt="Cirkas hangtag: återbruk, kreativitet, kvalitet">
       </figure>
       <p>Varje produkt är unik och tillverkad av omsorgsfullt utvalda återbrukade textilier.</p>
+    </section>
+
+    <section id="butiken" class="section">
+      <h2>Butiken på Storgatan</h2>
+      <p class="section-intro">Kika in i skyltfönstret – här möts kläder, konst, återbruk och lek.</p>
+      <figure class="wide wider">
+        <img src="img/butiksfonster.webp" width="1100" height="846" loading="lazy"
+             alt="Skyltfönstret hos Glada djur i kvällsljus: dockor i barnkläder från Lekloop, en tavla med en häst som läser, trådrullar, mjukisdjur och handgjorda väskor">
+        <figcaption>Skyltfönstret hos Glada djur, Storgatan 15 i Ulricehamn.</figcaption>
+      </figure>
     </section>
 
     <section id="oppet-hus" class="section">
@@ -195,7 +244,8 @@
     <address>
       Storgatan 15, 523 30 Ulricehamn<br>
       <a href="mailto:marianne@sorling.nu">marianne@sorling.nu</a> &bull;
-      <a href="tel:+46701479201">070 147 92 01</a>
+      <a href="tel:+46701479201">070 147 92 01</a> &bull;
+      <a href="https://www.instagram.com/gladadjurstudio" rel="me noopener">Instagram</a>
     </address>
     <p>&copy; 2026 Glada djur &ndash; Ulricehamn</p>
   </footer>
