@@ -576,6 +576,26 @@ figcaption {
   max-width: 24rem;
 }
 
+.tag-pair img {
+  max-width: 16rem;
+  width: 100%;
+  box-shadow: none;
+  filter: drop-shadow(0 6px 10px rgba(27, 58, 87, 0.2));
+}
+
+.signature {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.15rem;
+  margin: 1rem 0 0;
+}
+
+.signature span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
 .gallery-narrow {
   grid-template-columns: repeat(auto-fit, minmax(14rem, 22rem));
   justify-content: center;
