@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Glada djur – Butik i Ulricehamn | Barnkläder, konst &amp; lek</title>
-  <meta name="description" content="Glada djur är en ny butik på Storgatan 15 i Ulricehamn med barnkläder i storlek 50–116 från Lekloop, presentartiklar, personliga tavlor och handsydda dinosaurier. Välkommen på öppet hus 2 november 2026.">
+  <meta name="description" content="Glada djur är en ny butik på Storgatan 15 i Ulricehamn med barnkläder i storlek 50–116 från Lekloop, presentartiklar, personliga tavlor och handsydda dinosaurier. Öppet tisdag–fredag 10–18 och lördag 10–14. Välkommen på öppet hus 2 november 2026.">
   <link rel="canonical" href="https://gladadjur.se/">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="theme-color" content="#fff9f2">
@@ -16,7 +16,7 @@
   <meta property="og:image" content="https://gladadjur.se/welcome-oppet-hus.jpg">
   <meta property="og:image:width" content="1131">
   <meta property="og:image:type" content="image/jpeg">
-  <meta property="og:image:height" content="1600">
+  <meta property="og:image:height" content="1599">
   <meta property="og:image:alt" content="Inbjudan till öppet hus hos Glada djur i Ulricehamn">
   <meta property="og:site_name" content="Glada djur">
   <meta name="twitter:card" content="summary_large_image">
@@ -54,10 +54,15 @@
           "https://gladadjur.se/img/tavlor-butik-1.webp",
           "https://gladadjur.se/img/cirka-butik-vaskor.webp",
           "https://gladadjur.se/img/lekloop-butik-klader.webp",
+          "https://gladadjur.se/img/oppettider.webp",
           "https://gladadjur.se/welcome-oppet-hus.jpg"
         ],
-        "logo": "https://gladadjur.se/img/logo-512.png",
-        "sameAs": ["https://www.instagram.com/gladadjurstudio"],
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://gladadjur.se/img/logo-512.png",
+          "width": 512,
+          "height": 512
+        },
         "telephone": "+46701479201",
         "email": "marianne@sorling.nu",
         "description": "Butik på Storgatan 15 i Ulricehamn med barnkläder, presentartiklar, konst och lek.",
@@ -75,6 +80,25 @@
           "addressCountry": "SE"
         },
         "hasMap": "https://www.google.com/maps/search/?api=1&query=Storgatan+15+523+30+Ulricehamn",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "https://schema.org/Tuesday",
+              "https://schema.org/Wednesday",
+              "https://schema.org/Thursday",
+              "https://schema.org/Friday"
+            ],
+            "opens": "10:00",
+            "closes": "18:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "https://schema.org/Saturday",
+            "opens": "10:00",
+            "closes": "14:00"
+          }
+        ],
         "contactPoint": {
           "@type": "ContactPoint",
           "contactType": "customer service",
@@ -137,7 +161,7 @@
 
   <header class="site-header">
     <a class="brand" href="/">
-      <img src="img/logo-96.webp" width="48" height="48" alt="">
+      <img src="img/logo-128.webp" width="64" height="64" alt="">
       <span>Glada djur</span>
     </a>
     <nav aria-label="Huvudmeny">
@@ -148,6 +172,7 @@
       <a href="#studio">Tavlor</a>
       <a href="#aterbruk">Återbruk</a>
       <a href="#butiken">Butiken</a>
+      <a href="#oppettider">Öppettider</a>
       <a href="#oppet-hus">Öppet hus</a>
       <a href="#kontakt">Kontakt</a>
     </nav>
@@ -162,6 +187,7 @@
         <h1>Välkommen till <span class="accent">Glada djur</span>!</h1>
         <p class="lead">Barnkläder, presentartiklar, konst och lek – fyra varumärken under samma tak.</p>
         <a class="button" href="#oppet-hus">Kom på öppet hus 2 november</a>
+        <p class="hero-hours"><a href="#oppettider">Öppet tis&ndash;fre 10&ndash;18 &bull; lör 10&ndash;14</a></p>
         <p class="hero-address">Storgatan 15, Ulricehamn &bull; <a href="https://www.google.com/maps/search/?api=1&amp;query=Storgatan+15+523+30+Ulricehamn" rel="noopener">Hitta hit</a></p>
       </div>
     </section>
@@ -172,6 +198,31 @@
         <li><strong>Hållbart och återbrukat</strong><span>Textilier som får ett nytt liv.</span></li>
         <li><strong>Handgjort med kärlek</strong><span>Unika tavlor och handsydda dinosaurier.</span></li>
       </ul>
+    </section>
+
+    <section id="oppettider" class="section" aria-labelledby="oppettider-rubrik">
+      <h2 id="oppettider-rubrik">Våra <span class="accent">öppettider</span></h2>
+      <p class="section-intro">Välkommen in till Storgatan 15 i Ulricehamn</p>
+      <div class="split hours">
+        <figure class="split-img">
+          <img src="img/oppettider.webp" srcset="img/oppettider-600.webp 600w, img/oppettider.webp 900w" sizes="(max-width: 36rem) 100vw, 26rem"
+               width="900" height="1260" loading="lazy"
+               alt="Öppettider hos Glada djur: tisdag–fredag 10.00–18.00, lördag 10.00–14.00. gladadjur.se">
+        </figure>
+        <div class="split-text">
+          <p id="oppet-status" class="open-status" role="status" hidden></p>
+          <table class="hours-table">
+            <caption class="visually-hidden">Öppettider</caption>
+            <thead><tr><th scope="col">Dag</th><th scope="col">Tid</th></tr></thead>
+            <tbody>
+              <tr data-days="2 3 4 5" data-open="600" data-close="1080" data-until="18.00"><th scope="row">Tisdag&ndash;fredag</th><td><time datetime="10:00">10.00</time>&ndash;<time datetime="18:00">18.00</time></td></tr>
+              <tr data-days="6" data-open="600" data-close="840" data-until="14.00"><th scope="row">Lördag</th><td><time datetime="10:00">10.00</time>&ndash;<time datetime="14:00">14.00</time></td></tr>
+              <tr class="closed" data-days="0 1"><th scope="row">Söndag&ndash;måndag</th><td>Stängt</td></tr>
+            </tbody>
+          </table>
+          <p><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Storgatan+15+523+30+Ulricehamn" rel="noopener">Hitta till butiken</a></p>
+        </div>
+      </div>
     </section>
 
     <section id="varumarken" class="section">
@@ -202,7 +253,7 @@
           <p class="tag">Konst</p>
           <p>Konst fylld av färg, glädje och personlighet.</p>
           <img class="card-img card-img-round" src="img/logo-512.webp" width="512" height="512" loading="lazy"
-               alt="Logotyp för Glada djur Studio: färgglad penselring med hjärtan">
+               alt="Logotyp för Glada djur Studio, Marianne Sörling, gladadjur.se: färgglad penselring med hjärtan">
           <a class="pdf-link more-link" href="#studio">Se tavlorna</a>
         </article>
         <article class="card card-blabert">
@@ -367,7 +418,6 @@
         <img src="img/tavlor-butik-4.webp" width="1200" height="835" loading="lazy"
              alt="Tavla med en giraff med glasögon som läser en bok, bredvid en tavla med färgglada katter på guldbakgrund">
       </figure>
-      <p><a href="https://www.instagram.com/gladadjurstudio" rel="me noopener">@gladadjurstudio på Instagram</a></p>
     </section>
 
     <section id="aterbruk" class="section" aria-labelledby="aterbruk-rubrik">
@@ -406,7 +456,7 @@
           <p class="time">Kl. 16.00–20.00</p>
         </div>
         <p>Välkommen att titta runt och upptäcka mina fyra varumärken!</p>
-        <img class="flyer" src="welcome-oppet-hus.jpg" width="1131" height="1600" loading="lazy"
+        <img class="flyer" src="welcome-oppet-hus.jpg" width="1131" height="1599" loading="lazy"
              alt="Inbjudan till öppet hus hos Glada djur i Ulricehamn måndag 2 november 2026 kl. 16.00–20.00">
       </div>
     </section>
@@ -421,6 +471,9 @@
         Storgatan 15<br>
         523 30 Ulricehamn
       </address>
+      <p class="contact-hours"><strong>Öppettider</strong><br>
+        Tisdag&ndash;fredag 10.00&ndash;18.00<br>
+        Lördag 10.00&ndash;14.00</p>
       <p><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Storgatan+15+523+30+Ulricehamn" rel="noopener">Hitta till butiken</a></p>
     </section>
   </main>
@@ -429,11 +482,33 @@
     <img class="footer-pal" src="img/storlek-elefant.webp" width="215" height="208" loading="lazy" alt="">
     <address>
       Storgatan 15, 523 30 Ulricehamn<br>
+      Tis&ndash;fre 10&ndash;18 &bull; lör 10&ndash;14<br>
       <a href="mailto:marianne@sorling.nu">marianne@sorling.nu</a> &bull;
-      <a href="tel:+46701479201">070 147 92 01</a> &bull;
-      <a href="https://www.instagram.com/gladadjurstudio" rel="me noopener">Instagram</a>
+      <a href="tel:+46701479201">070 147 92 01</a>
     </address>
     <p>&copy; 2026 Glada djur &ndash; Ulricehamn</p>
   </footer>
+
+  <script>
+    (() => {
+      const status = document.getElementById('oppet-status');
+      const rows = document.querySelectorAll('.hours-table [data-days]');
+      if (!status || !rows.length) return;
+      const parts = Object.fromEntries(new Intl.DateTimeFormat('en-GB', {
+        timeZone: 'Europe/Stockholm', weekday: 'short', hour: 'numeric', minute: 'numeric', hourCycle: 'h23'
+      }).formatToParts(new Date()).map(p => [p.type, p.value]));
+      const day = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].indexOf(parts.weekday);
+      const now = +parts.hour * 60 + +parts.minute;
+      let open = false, until = '';
+      rows.forEach(row => {
+        if (!row.dataset.days.split(' ').includes(String(day))) return;
+        row.classList.add('today');
+        if (now >= +row.dataset.open && now < +row.dataset.close) { open = true; until = row.dataset.until; }
+      });
+      status.textContent = open ? 'Öppet nu – stänger kl. ' + until : 'Stängt just nu';
+      status.classList.add(open ? 'is-open' : 'is-closed');
+      status.hidden = false;
+    })();
+  </script>
 </body>
 </html>

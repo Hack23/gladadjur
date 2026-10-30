@@ -43,6 +43,15 @@ img {
   left: -999px;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 .skip:focus {
   left: 1rem;
   top: 1rem;
@@ -83,6 +92,10 @@ img {
   font-size: 1.4rem;
   color: var(--coral);
   text-decoration: none;
+}
+
+.brand img {
+  border-radius: 50%;
 }
 
 .site-header nav {
@@ -353,6 +366,109 @@ h2 {
 .hero-address {
   margin: 1rem 0 0;
   font-size: 0.95rem;
+}
+
+.hero-hours {
+  display: inline-block;
+  margin: 1rem 0 0;
+  padding: 0.35rem 1rem;
+  background: #fff;
+  border: 2px solid var(--pink-border);
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.hero-hours a {
+  text-decoration: none;
+}
+
+.hero-hours a:hover,
+.hero-hours a:focus-visible {
+  color: var(--coral);
+}
+
+.hero-hours + .hero-address {
+  margin-top: 0.75rem;
+}
+
+/* Opening hours */
+.hours .split-img img {
+  max-width: 26rem;
+  width: 100%;
+}
+
+.hours-table {
+  width: 100%;
+  max-width: 24rem;
+  margin: 0 auto 1.5rem;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #fff;
+  border: 2px solid var(--pink-border);
+  border-radius: 20px;
+  overflow: hidden;
+  font-size: 1.05rem;
+}
+
+.hours-table th,
+.hours-table td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--pink-border);
+}
+
+.hours-table thead th {
+  background: var(--sky);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.hours-table tbody th {
+  text-align: left;
+}
+
+.hours-table tbody td {
+  text-align: right;
+  font-weight: 700;
+  color: var(--coral);
+  white-space: nowrap;
+}
+
+.hours-table .closed {
+  opacity: 0.75;
+}
+
+.hours-table .today th,
+.hours-table .today td {
+  background: #fff6c9;
+}
+
+.open-status {
+  display: inline-block;
+  margin: 0 0 1rem;
+  padding: 0.4rem 1.1rem;
+  border-radius: 999px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.open-status[hidden] { display: none; }
+.open-status.is-open { background: var(--green); }
+.open-status.is-closed { background: var(--coral-dark); }
+
+.hours-table .closed td {
+  color: var(--navy);
+  font-weight: 400;
+}
+
+.hours-table tbody tr:last-child th,
+.hours-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.contact-hours {
+  margin: 1rem 0;
 }
 
 /* Brand cards */
