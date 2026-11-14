@@ -202,6 +202,68 @@ h2 {
 .usp-list strong { color: var(--coral); margin-bottom: 0.25rem; }
 .usp-list span { font-size: 0.9rem; }
 
+/* New products */
+.price-banner {
+  display: inline-block;
+  margin: 0 auto 1.75rem;
+  padding: 0.5rem 1.35rem;
+  background: #fff;
+  border: 2px solid var(--pink-border);
+  border-radius: 999px;
+  font-size: 1.05rem;
+}
+
+.price-banner strong {
+  color: var(--coral);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 1.5rem;
+  max-width: 52rem;
+  margin: 0 auto 1.75rem;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 2px solid var(--pink-border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+}
+
+.product-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  margin-bottom: 1rem;
+  box-shadow: 0 6px 20px rgba(27, 58, 87, 0.12);
+}
+
+.product-card h3 {
+  color: var(--coral);
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-card p {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+}
+
+.product-card .product-meta {
+  margin: auto 0 0;
+  padding: 0.4rem 0.9rem;
+  align-self: center;
+  background: var(--sky);
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
 /* Lekloop */
 .split {
   display: grid;
